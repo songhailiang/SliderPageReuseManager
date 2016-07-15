@@ -8,7 +8,7 @@
 
 #import <UIKit/UIKit.h>
 
-@interface UIViewController (ReuseKey)
+@interface UIViewController (Reuse)
 
 //指定ViewController的复用Key，根据Key可以获取复用池子里是否已经有此ViewController，如果有则直接取出来使用
 @property (nonatomic, copy) NSString *reuseKey;
