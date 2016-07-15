@@ -6,13 +6,13 @@
 //  Copyright © 2016年 宋海梁. All rights reserved.
 //
 
-#import "UIViewController+ReuseKey.h"
+#import "UIViewController+Reuse.h"
 #import <objc/runtime.h>
 
 static char reuseKeyKey;
 static char isReusedKey;
 
-@implementation UIViewController (ReuseKey)
+@implementation UIViewController (Reuse)
 
 - (NSString *)reuseKey {
 

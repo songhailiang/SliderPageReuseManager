@@ -7,7 +7,7 @@
 //
 
 #import <Foundation/Foundation.h>
-#import "UIViewController+ReuseKey.h"
+#import "UIViewController+Reuse.h"
 
 @interface SliderPageReuseManager : NSObject
 
