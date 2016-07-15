@@ -30,9 +30,9 @@
     return self;
 }
 
-- (void)registerViewController:(Class)viewControllerClass forReuseIdentifier:(NSString *)identifier {
+- (void)registerClass:(Class)someClass forReuseIdentifier:(NSString *)identifier {
 
-    [_reuseClasses setObject:viewControllerClass forKey:identifier];
+    [_reuseClasses setObject:someClass forKey:identifier];
     [_reusePool setObject:[NSMutableArray arrayWithCapacity:_capacity] forKey:identifier];
 }
 
@@ -91,6 +91,60 @@
     }
     
     return controller;
+}
+
+- (UITableView *)dequeueReuseableTableViewWithIdentifier:(NSString *)identifier forKey:(NSString *)key {
+
+    Class cls = [self.reuseClasses objectForKey:identifier];
+    
+    NSAssert1(cls, @"没有找到注册类标识：%@", identifier);
+    NSAssert1([cls isSubclassOfClass:[UITableView class]], @"%@注册类型错误", identifier);
+    
+    NSMutableArray *pool = [self.reusePool objectForKey:identifier];
+    
+    __block UITableView *tableView;
+    [pool enumerateObjectsUsingBlock:^(UITableView *t, NSUInteger idx, BOOL * _Nonnull stop) {
+        if ([t.reuseKey isEqualToString:key]) {
+            tableView = t;
+            *stop = YES;
+        }
+    }];
+    
+    //复用队列里没有找到
+    if (!tableView) {
+        
+        //复用队列超过最大容量，取第一个做复用
+        if (pool.count >= self.capacity) {
+            NSLog(@"复用TableView");
+            
+            tableView = [pool firstObject];
+            
+            tableView.reuseKey = key;
+            
+            tableView.isReused = YES;
+            
+            [pool removeObjectAtIndex:0];
+        }
+        //没有超过最大容量，实例化一个新的
+        else {
+            NSLog(@"实例化新TableView");
+            
+            tableView = [[cls alloc]init];
+            tableView.reuseKey = key;
+            tableView.isReused = NO;
+        }
+        
+        [pool addObject:tableView];
+        
+    }else {
+        
+        NSLog(@"找到原来的TableView");
+        [pool removeObject:tableView];
+        [pool addObject:tableView];
+        tableView.isReused = NO;
+    }
+    
+    return tableView;
 }
 
 @end

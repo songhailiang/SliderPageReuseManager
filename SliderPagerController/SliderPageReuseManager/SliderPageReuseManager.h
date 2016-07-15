@@ -8,14 +8,16 @@
 
 #import <Foundation/Foundation.h>
 #import "UIViewController+Reuse.h"
+#import "UITableView+Reuse.h"
 
 @interface SliderPageReuseManager : NSObject
 
 //缓存最大容量
 @property (nonatomic, assign) NSInteger capacity;
 
-- (void)registerViewController:(Class)viewControllerClass forReuseIdentifier:(NSString *)identifier;
+- (void)registerClass:(Class)someClass forReuseIdentifier:(NSString *)identifier;
 
 - (__kindof UIViewController *)dequeueReuseableViewControllerWithIdentifier:(NSString *)identifier forKey:(NSString *)key;
+- (__kindof UITableView *)dequeueReuseableTableViewWithIdentifier:(NSString *)identifier forKey:(NSString *)key;
 
 @end

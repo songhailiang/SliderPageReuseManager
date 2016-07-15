@@ -47,8 +47,8 @@
     
     _reuseManager = [[SliderPageReuseManager alloc] init];
     _reuseManager.capacity = 3;
-    [_reuseManager registerViewController:[CategoryController class] forReuseIdentifier:@"category"];
-    [_reuseManager registerViewController:[PhotoController class] forReuseIdentifier:@"photo"];
+    [_reuseManager registerClass:[CategoryController class] forReuseIdentifier:@"category"];
+    [_reuseManager registerClass:[PhotoController class] forReuseIdentifier:@"photo"];
     
     self.titles = @[@"全部",@"舞蹈",@"烹饪",@"模特",@"旅游",@"体育",@"书画",@"武术",@"爬山",@"太极",@"其他"];
     [self setupSegment];

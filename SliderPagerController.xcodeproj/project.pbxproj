@@ -22,6 +22,7 @@
 		F1E773371D388066002FCED9 /* PhotoController.m in Sources */ = {isa = PBXBuildFile; fileRef = F1E773361D388066002FCED9 /* PhotoController.m */; };
 		F1E7733B1D388259002FCED9 /* PhotoCell.m in Sources */ = {isa = PBXBuildFile; fileRef = F1E7733A1D388259002FCED9 /* PhotoCell.m */; };
 		F1E7733E1D388FA0002FCED9 /* UITableView+Reuse.m in Sources */ = {isa = PBXBuildFile; fileRef = F1E7733D1D388FA0002FCED9 /* UITableView+Reuse.m */; };
+		F1E773411D38ADF6002FCED9 /* ReuseTableViewDemo.m in Sources */ = {isa = PBXBuildFile; fileRef = F1E773401D38ADF6002FCED9 /* ReuseTableViewDemo.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -54,6 +55,8 @@
 		F1E7733A1D388259002FCED9 /* PhotoCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PhotoCell.m; sourceTree = "<group>"; };
 		F1E7733C1D388FA0002FCED9 /* UITableView+Reuse.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UITableView+Reuse.h"; sourceTree = "<group>"; };
 		F1E7733D1D388FA0002FCED9 /* UITableView+Reuse.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UITableView+Reuse.m"; sourceTree = "<group>"; };
+		F1E7733F1D38ADF6002FCED9 /* ReuseTableViewDemo.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ReuseTableViewDemo.h; sourceTree = "<group>"; };
+		F1E773401D38ADF6002FCED9 /* ReuseTableViewDemo.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ReuseTableViewDemo.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -150,6 +153,8 @@
 				F183A8E91D34BCB000180246 /* ReuseSingleControllerDemo.m */,
 				F1E773321D38804B002FCED9 /* ReuseMultiControllerDemo.h */,
 				F1E773331D38804B002FCED9 /* ReuseMultiControllerDemo.m */,
+				F1E7733F1D38ADF6002FCED9 /* ReuseTableViewDemo.h */,
+				F1E773401D38ADF6002FCED9 /* ReuseTableViewDemo.m */,
 				F183A8EB1D34BCC900180246 /* CategoryController.h */,
 				F183A8EC1D34BCC900180246 /* CategoryController.m */,
 				F1E773351D388066002FCED9 /* PhotoController.h */,
@@ -291,6 +296,7 @@
 				F183A8EA1D34BCB000180246 /* ReuseSingleControllerDemo.m in Sources */,
 				F183A8ED1D34BCC900180246 /* CategoryController.m in Sources */,
 				F183A8D81D34BBCE00180246 /* ViewController.m in Sources */,
+				F1E773411D38ADF6002FCED9 /* ReuseTableViewDemo.m in Sources */,
 				F183A8D51D34BBCE00180246 /* AppDelegate.m in Sources */,
 				F183A8D21D34BBCE00180246 /* main.m in Sources */,
 				F1E773341D38804B002FCED9 /* ReuseMultiControllerDemo.m in Sources */,

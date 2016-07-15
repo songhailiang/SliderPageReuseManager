@@ -45,7 +45,7 @@
 - (void)setupViewUI {
 
     _reuseManager = [[SliderPageReuseManager alloc] init];
-    [_reuseManager registerViewController:[CategoryController class] forReuseIdentifier:@"category"];
+    [_reuseManager registerClass:[CategoryController class] forReuseIdentifier:@"category"];
     
     self.titles = @[@"全部",@"舞蹈",@"烹饪",@"模特",@"旅游",@"体育",@"书画",@"其他"];
     [self setupSegment];
