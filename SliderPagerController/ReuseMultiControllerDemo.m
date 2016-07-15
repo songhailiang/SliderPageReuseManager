@@ -107,9 +107,9 @@
         
         CategoryController *cateVc = [self.reuseManager dequeueReuseableViewControllerWithIdentifier:@"category" forKey:[NSString stringWithFormat:@"%@",@(categoryId)]];
         
-//        if (!cateVc.parentViewController) {
-//            [self addChildViewController:cateVc];
-//        }
+        if (!cateVc.parentViewController) {
+            [self addChildViewController:cateVc];
+        }
         
         cateVc.categoryId = categoryId;
         //如果是复用的ViewController，则加载新数据
@@ -125,6 +125,10 @@
     
         NSInteger categoryId = index;
         PhotoController *photoVc = [self.reuseManager dequeueReuseableViewControllerWithIdentifier:@"photo" forKey:[NSString stringWithFormat:@"%@",@(categoryId)]];
+        
+        if (!photoVc.parentViewController) {
+            [self addChildViewController:photoVc];
+        }
         
         photoVc.categoryId = categoryId;
         

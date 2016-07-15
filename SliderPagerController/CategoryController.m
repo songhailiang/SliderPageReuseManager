@@ -7,6 +7,7 @@
 //
 
 #import "CategoryController.h"
+#import "DetailController.h"
 #import <Masonry.h>
 #import <MJRefresh.h>
 
@@ -119,6 +120,9 @@
 - (void)tableView:(UITableView *)tableView didSelectRowAtIndexPath:(NSIndexPath *)indexPath {
     
     [tableView deselectRowAtIndexPath:indexPath animated:YES];
+    
+    DetailController *detailVc = [[DetailController alloc] init];
+    [self.parentViewController.navigationController pushViewController:detailVc animated:YES];
 }
 
 /*

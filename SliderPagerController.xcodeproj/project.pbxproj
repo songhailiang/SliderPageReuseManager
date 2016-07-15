@@ -23,6 +23,7 @@
 		F1E7733B1D388259002FCED9 /* PhotoCell.m in Sources */ = {isa = PBXBuildFile; fileRef = F1E7733A1D388259002FCED9 /* PhotoCell.m */; };
 		F1E7733E1D388FA0002FCED9 /* UITableView+Reuse.m in Sources */ = {isa = PBXBuildFile; fileRef = F1E7733D1D388FA0002FCED9 /* UITableView+Reuse.m */; };
 		F1E773411D38ADF6002FCED9 /* ReuseTableViewDemo.m in Sources */ = {isa = PBXBuildFile; fileRef = F1E773401D38ADF6002FCED9 /* ReuseTableViewDemo.m */; };
+		F1E773441D38C6DC002FCED9 /* DetailController.m in Sources */ = {isa = PBXBuildFile; fileRef = F1E773431D38C6DC002FCED9 /* DetailController.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -57,6 +58,8 @@
 		F1E7733D1D388FA0002FCED9 /* UITableView+Reuse.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UITableView+Reuse.m"; sourceTree = "<group>"; };
 		F1E7733F1D38ADF6002FCED9 /* ReuseTableViewDemo.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ReuseTableViewDemo.h; sourceTree = "<group>"; };
 		F1E773401D38ADF6002FCED9 /* ReuseTableViewDemo.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ReuseTableViewDemo.m; sourceTree = "<group>"; };
+		F1E773421D38C6DC002FCED9 /* DetailController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DetailController.h; sourceTree = "<group>"; };
+		F1E773431D38C6DC002FCED9 /* DetailController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DetailController.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -159,6 +162,8 @@
 				F183A8EC1D34BCC900180246 /* CategoryController.m */,
 				F1E773351D388066002FCED9 /* PhotoController.h */,
 				F1E773361D388066002FCED9 /* PhotoController.m */,
+				F1E773421D38C6DC002FCED9 /* DetailController.h */,
+				F1E773431D38C6DC002FCED9 /* DetailController.m */,
 			);
 			name = Controllers;
 			sourceTree = "<group>";
@@ -303,6 +308,7 @@
 				F1E7733B1D388259002FCED9 /* PhotoCell.m in Sources */,
 				F1E7733E1D388FA0002FCED9 /* UITableView+Reuse.m in Sources */,
 				F1053BAC1D37784E00A6D0D2 /* UIViewController+Reuse.m in Sources */,
+				F1E773441D38C6DC002FCED9 /* DetailController.m in Sources */,
 				F1053BA91D37781300A6D0D2 /* SliderPageReuseManager.m in Sources */,
 				F1E773371D388066002FCED9 /* PhotoController.m in Sources */,
 			);
