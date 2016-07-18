@@ -23,6 +23,9 @@ To make your slider page re-useable.
 <img src='https://github.com/songhailiang/SliderPageReuseManager/blob/master/screenshot/screenshot1.gif' width=400 />
 <img src='https://github.com/songhailiang/SliderPageReuseManager/blob/master/screenshot/screenshot2.gif' width=400 />
 
+# 安装说明
+复制SliderPageReuseManager文件夹里的所有文件到你的项目中（6个文件）
+
 # 使用方式
 
 1.实例化SliderPageReuseManager，并注册复用的ViewController（或者UITableView）
