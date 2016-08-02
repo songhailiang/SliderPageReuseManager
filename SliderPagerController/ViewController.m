@@ -23,10 +23,12 @@
     
     self.navigationItem.title = @"SliderPageReuseManager";
     
-    self.titles = @[@"复用单一ViewController",
+    self.titles = @[@"无复用(普通)",
+                    @"复用单一ViewController",
                     @"复用多个ViewController",
                     @"复用UITableView"];
-    self.controllers = @[@"ReuseSingleControllerDemo",
+    self.controllers = @[@"NoReuseController",
+                         @"ReuseSingleControllerDemo",
                          @"ReuseMultiControllerDemo",
                          @"ReuseTableViewDemo"];
 }

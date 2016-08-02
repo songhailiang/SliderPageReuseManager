@@ -10,6 +10,7 @@
 		DE5C037F021412D3A0A3404A /* libPods-SliderPagerController.a in Frameworks */ = {isa = PBXBuildFile; fileRef = BB8F8D1E09D3534B0006C2CF /* libPods-SliderPagerController.a */; };
 		F1053BA91D37781300A6D0D2 /* SliderPageReuseManager.m in Sources */ = {isa = PBXBuildFile; fileRef = F1053BA81D37781300A6D0D2 /* SliderPageReuseManager.m */; };
 		F1053BAC1D37784E00A6D0D2 /* UIViewController+Reuse.m in Sources */ = {isa = PBXBuildFile; fileRef = F1053BAB1D37784E00A6D0D2 /* UIViewController+Reuse.m */; };
+		F12A50541D50304E00C642CC /* NoReuseController.m in Sources */ = {isa = PBXBuildFile; fileRef = F12A50531D50304E00C642CC /* NoReuseController.m */; };
 		F183A8D21D34BBCE00180246 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = F183A8D11D34BBCE00180246 /* main.m */; };
 		F183A8D51D34BBCE00180246 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = F183A8D41D34BBCE00180246 /* AppDelegate.m */; };
 		F183A8D81D34BBCE00180246 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = F183A8D71D34BBCE00180246 /* ViewController.m */; };
@@ -34,6 +35,8 @@
 		F1053BA81D37781300A6D0D2 /* SliderPageReuseManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SliderPageReuseManager.m; sourceTree = "<group>"; };
 		F1053BAA1D37784E00A6D0D2 /* UIViewController+Reuse.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIViewController+Reuse.h"; sourceTree = "<group>"; };
 		F1053BAB1D37784E00A6D0D2 /* UIViewController+Reuse.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIViewController+Reuse.m"; sourceTree = "<group>"; };
+		F12A50521D50304E00C642CC /* NoReuseController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = NoReuseController.h; sourceTree = "<group>"; };
+		F12A50531D50304E00C642CC /* NoReuseController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = NoReuseController.m; sourceTree = "<group>"; };
 		F183A8CD1D34BBCE00180246 /* SliderPagerController.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = SliderPagerController.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		F183A8D11D34BBCE00180246 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		F183A8D31D34BBCE00180246 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
@@ -164,6 +167,8 @@
 				F1E773361D388066002FCED9 /* PhotoController.m */,
 				F1E773421D38C6DC002FCED9 /* DetailController.h */,
 				F1E773431D38C6DC002FCED9 /* DetailController.m */,
+				F12A50521D50304E00C642CC /* NoReuseController.h */,
+				F12A50531D50304E00C642CC /* NoReuseController.m */,
 			);
 			name = Controllers;
 			sourceTree = "<group>";
@@ -301,6 +306,7 @@
 				F183A8EA1D34BCB000180246 /* ReuseSingleControllerDemo.m in Sources */,
 				F183A8ED1D34BCC900180246 /* CategoryController.m in Sources */,
 				F183A8D81D34BBCE00180246 /* ViewController.m in Sources */,
+				F12A50541D50304E00C642CC /* NoReuseController.m in Sources */,
 				F1E773411D38ADF6002FCED9 /* ReuseTableViewDemo.m in Sources */,
 				F183A8D51D34BBCE00180246 /* AppDelegate.m in Sources */,
 				F183A8D21D34BBCE00180246 /* main.m in Sources */,
