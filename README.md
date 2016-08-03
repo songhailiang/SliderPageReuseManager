@@ -1,6 +1,7 @@
 # SliderPageReuseManager
 To make your slider page re-useable.
 让你的多表滑动切换视图支持复用！
+更多说明 [看这里](http://www.jianshu.com/p/8bdc3eb79b26)
 
 # 我能干什么
 1. 实现简单的多表滑动切换功能：2种方式
