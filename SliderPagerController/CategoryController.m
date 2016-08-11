@@ -13,7 +13,6 @@
 
 @interface CategoryController ()<UITableViewDelegate,UITableViewDataSource>
 
-@property (nonatomic, strong) UITableView *table;
 @property (nonatomic, strong) NSMutableArray *datas;
 
 @end

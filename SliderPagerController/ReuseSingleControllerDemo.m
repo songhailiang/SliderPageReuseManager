@@ -24,6 +24,8 @@
 
 @property (nonatomic, strong) SliderPageReuseManager *reuseManager;
 
+@property (nonatomic, weak) CategoryController *currentController;
+
 @end
 
 @implementation ReuseSingleControllerDemo
@@ -85,6 +87,7 @@
     _scrollView.showsHorizontalScrollIndicator = NO;
     _scrollView.showsVerticalScrollIndicator = NO;
     _scrollView.backgroundColor = [UIColor whiteColor];
+    _scrollView.scrollsToTop = NO;
     
     [self.view addSubview:_scrollView];
     [_scrollView mas_makeConstraints:^(MASConstraintMaker *make) {
@@ -101,11 +104,18 @@
     
     NSInteger categoryId = index;
     
+    if (self.currentController) {
+        self.currentController.table.scrollsToTop = NO;
+    }
+    
     CategoryController *cateVc = [self.reuseManager dequeueReuseableViewControllerWithIdentifier:@"category" forKey:[NSString stringWithFormat:@"%@",@(categoryId)]];
     
     if (!cateVc.parentViewController) {
         [self addChildViewController:cateVc];
     }
+    
+    self.currentController = cateVc;
+    cateVc.table.scrollsToTop = YES;
     
     cateVc.categoryId = categoryId;
     //如果是复用的ViewController，则加载新数据

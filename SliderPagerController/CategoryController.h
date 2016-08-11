@@ -10,6 +10,8 @@
 
 @interface CategoryController : UIViewController
 
+@property (nonatomic, strong) UITableView *table;
+
 @property (nonatomic, assign) NSInteger categoryId;
 
 //重新加载数据
