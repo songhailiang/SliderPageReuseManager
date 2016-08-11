@@ -7,6 +7,7 @@ To make your slider page re-useable.
 1. 实现简单的多表滑动切换功能：2种方式
 2. 实现切换视图的复用：复用ViewController和复用UITableView，可解决tab页过多时内存飙升的问题
 3. 可配置缓存池大小
+4. 支持点击状态栏回到顶部（scrollsToTop属性，1.1.0版本增加）
 
 ## 复用ViewController
 
@@ -49,5 +50,10 @@ To make your slider page re-useable.
 ```
 
 # Demo说明
-demo中使用pod加载了几个第三方库，如果需要运行，请打开.xcworkspace文件。
+demo中使用pod加载了几个第三方库，下载后需要先执行pod install（pod install --no-repo-update），然后打开.xcworkspace文件运行。
 tab页切换使用的是[HMSegmentedControl] (https://github.com/HeshamMegid/HMSegmentedControl) ，个人非常喜欢的一个第三方库。
+
+# 版本更新记录
+v1.1.0
+- 增加点击状态栏回到顶部功能，利用系统自带的属性scrollsToTop属性实现，纯净，具体见ReuseSingleControllerDemo
+- 版本库里移除Pods文件，更干净
